@@ -2,13 +2,19 @@ import React, { useState } from "react";
 
 const Profile = () => {
     // const [profile, setProfile]= useState(false)
+    const profileitems =[
+      {name:'Dashboard', slug:''},
+      {name: '', slug:''},
+      {name: 'Sign out', slug:''},
+      
+    ]
   return (
     <div>
       <button
         type="button"
         id="dropdownInformationButton"
         data-dropdown-toggle="dropdownInformation"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="text-white bg-blue-700 hover:bg-blue-800  focus:ring-2 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center "
         // onClick={()=>setProfile((profile)=>!profile)}
       >
         Dropdown header
