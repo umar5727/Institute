@@ -19,7 +19,7 @@ const router =createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />}/>
       <Route path='/contact-us' element={<Contact />}/>
-      <Route path='contact' element={<Contact />}/>
+      <Route path='/contact' element={<Contact />}/>
     </Route>
   )
 )

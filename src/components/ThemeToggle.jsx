@@ -21,8 +21,8 @@ const ThemeToggle = () => {
     >
         {
             (theme)?
-               <FontAwesomeIcon icon={faSun}  className='text-white group-hover:text-black'/>
-           
+              //  <FontAwesomeIcon icon={faSun}  className='text-white group-hover:text-black'/>
+            <img src="brightness.svg" alt="" />
 
        
             :

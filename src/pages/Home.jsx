@@ -6,54 +6,88 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBook } from '@fortawesome/free-solid-svg-icons'
 // import Button from '../components/Button'
 import {Button, Header, Tabs, ThemeToggle} from '../components'
+import ProductCard from '../components/ProductCard'
+import TwoColumnHero from '../components/ToColumnHero'
+import SmallCard from '../components/SmallCard'
 const Home = () => {
+  const products = [
+    {
+      id: 1,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },
+    // Add more products as needed
+    {
+      id: 2,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },
+    {
+      id: 3,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },
+    {
+      id: 4,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },
+    {
+      id: 5,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },{
+      id: 6,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },{
+      id: 7,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },{
+      id: 8,
+      name: 'Product 1',
+      description: 'Description for Product 1',
+      category: 'Category 1',
+      price: 19.99,
+      image: 'https://placekitten.com/300/200', // Replace with your product image URL
+    },
+  ];
   return (
-    <div className=' dark:bg-boot-dark overflow-hidden'>Home
-
-      {/* <Profile />
+    <div className=' dark:bg-boot-dark overflow-hidden'>
+      {/* Home */}
+    <TwoColumnHero />
     
-      <nav className='relative'>
-        <div className="navwrapper w-full flex justify-between items-center">
-        <Link to="/contact-us" className="logo w-36 flex gap-2">
-          <FontAwesomeIcon icon={faBook} className='text-blue-600 w-8 h-auto'/>
-          
-          <h1 className='text-2xl font-semibold self-center font-serif whitespace-nowrap dark:text-white'>Institute</h1>
-        </Link>
-        {/* logo ends  
+    {/* <div className="flex flex-wrap justify-center mt-5">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div> */}
 
-        <ul className=' absolute h-1 top-10 overflow-hidden w-full md:h-fit md:w-fit transition-ll duration-1000 ease-in-out hover:h-fit  md:static md:flex md:gap-5 bg-blue-300 text-black'>
-          <li className='py-2 hover:bg-blue-600 hover:text-white cursor-pointer md:py-0'>home</li>
-          <li className='py-2 hover:bg-blue-600 hover:text-white cursor-pointer md:py-0'>courses</li>
-          <li className='py-2 hover:bg-blue-600 hover:text-white cursor-pointer md:py-0'>about </li>
-          <li className='py-2 hover:bg-blue-600 hover:text-white cursor-pointer md:py-0'>contact</li>
-        </ul>
-
-        {/* navigation ends  
-
-        <div className='flex gap-1 items-center'>
-
-          <ThemeToggle />
-
-          <Button className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-transparent' >
-          
-          <FontAwesomeIcon icon={faBars}   className='w-5 h-5'/>
-          </Button>
-          {/* nav button ends        
-          
-          <div className='flex justify-center items-center px-2 bg-blue-600'>
-            profile
-          </div>
-        </div>
-        </div>
-      </nav>
-    
-    <div>
-      <h1>tabs</h1>
-
+    <div className='flex flex-wrap '>
+      <SmallCard bg='bg-primary-yellow-light'imgColor='text-primary-yellow'/>
     </div>
-    <Tabs />
-
-    <Header /> */}
     </div>
   )
 }

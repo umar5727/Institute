@@ -53,7 +53,7 @@ const Profile = () => {
           {/* before ends */}
 
           {/* profile header starts  */}
-        <div className="flex gap-3 px-2"> 
+        <div className="flex gap-3 px-3"> 
           <div className="overflow-hidden w-10 h-10 rounded-full">
           <FontAwesomeIcon icon={faFaceSmile}  className="w-full h-full  bg-primary text-white "/>       
           </div>

@@ -18,7 +18,7 @@ const [navbtn, setNavbtn]=useState(false)
   return (
     <header  className='w-full relative'>
       <Container>
-        <div className='flex justify-between items-center bg-white h-16 dark:bg-primary-dark '>
+        <div className='flex justify-between items-center bg-white h-16 dark:bg-primary-dark transition-colors duration-200'>
       <Logo />
       <Navigation navbtn={navbtn}/>
       <div className='flex gap-1 justify-center items-center'>
