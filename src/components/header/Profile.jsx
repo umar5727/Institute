@@ -46,7 +46,7 @@ const Profile = () => {
 
         <div 
          
-          className={`lightShadow w-64 rounded-lg py-4 px-2 absolute top-14 right-0 bg-white z-10 ${className} dark:bg-black 
+          className={`lightShadow w-64 rounded-lg py-4 px-2 absolute top-14 right-0 bg-white z-50 ${className} dark:bg-black 
           `}
         >
           <div className="absolute -top-2 right-3 w-4 h-4 bg-white rotate-45 dark:bg-black"></div>

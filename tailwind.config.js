@@ -37,7 +37,11 @@ export default {
         'light-line'           : '#dde0e3',
         'border-dark' :'rgba(255, 255, 255, 0.07)',
         'dark-nav':'#c5c6cc',
-
+        'primary-odd':'rgba(29, 59, 83, 1)',
+        'primary-odd-light':'rgba(29, 59, 83, 0.1)',
+        'primary-danger': 'rgba(214, 41, 62, 1)',
+        'card-dark-bg':'#1b1e21',
+        'primary-orange':'rgb(253, 126, 20)',
         },
         transitionProperty: {
           'height': 'height',
