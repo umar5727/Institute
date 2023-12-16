@@ -13,7 +13,7 @@ const [navbtn, setNavbtn]=useState(false)
   }
   useEffect(()=>{
     window.addEventListener('resize',()=>(setNavbtn(false)))
-  })
+  },[])
 
   return (
     <header  className='w-full relative'>

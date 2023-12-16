@@ -5,7 +5,7 @@ const Navigation = ({navbtn}) => {
   const navItems=[
     {name: 'Home', slug:'/'},
     {name: 'Courses', slug:'#'},
-    {name: 'About Us', slug:'#'},
+    {name: 'About Us', slug:'/about-us'},
     {name: 'Contact Us', slug:'/contact'},
   ]
   var className='hidden'
@@ -15,7 +15,7 @@ const Navigation = ({navbtn}) => {
     className='h-1 ';
     liClass='';
   }else{
-    className='flex flex-col bg-white  lightShadow   h-52 dark:bg-primary-dark ';
+    className='flex flex-col bg-white  lightShadow h-52 dark:bg-primary-dark ';
     liClass='border-y  border-border-dark  rounded-none ';
   }
 

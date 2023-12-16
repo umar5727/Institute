@@ -2,7 +2,7 @@ import React from "react";
 
 import TwoColumnHero from "../components/ToColumnHero";
 import SmallCard from "../components/SmallCard";
-import { SmallCardContainer, Tabs } from "../components";
+import { Add, FeedbackContainer, SmallCardContainer, Tabs } from "../components";
 const Home = () => {
   const products = [
     {
@@ -84,6 +84,8 @@ const Home = () => {
 
       <SmallCardContainer />
       <Tabs />
+      <Add />
+      <FeedbackContainer />
     </main>
   );
 };

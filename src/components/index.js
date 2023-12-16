@@ -9,6 +9,10 @@ import Header from "./header/Header";
 import NavToggle from "./header/NavToggle";
 import SmallCardContainer from "./SmallCardContainer";
 import ProductCard from "./ProductCard";
+import Add from "./Add";
+import FeedbackCard from "./feedback/FeedbackCard";
+import FeedbackContainer from "./feedback/FeedbackContainer";
+import Carousel from "./carousel/Crousel";
 export {
     Header,
     Profile,
@@ -20,4 +24,8 @@ export {
     NavToggle,
     SmallCardContainer,
     ProductCard,
+    Add,
+    FeedbackCard,
+    FeedbackContainer,
+    Carousel,
 }

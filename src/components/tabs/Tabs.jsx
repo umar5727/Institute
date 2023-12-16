@@ -281,7 +281,11 @@ const Tabs = () => {
     // console.log(index);
   };
   return (
-    <section className="my-14">
+    <section className="mt-14 mb-12">
+      <div className="text-center  dark:text-white pb-5">
+        <h2 className="text-3xl font-bold ">Most Popular Courses</h2>
+        <p>Choose from hundreds of courses from specialist organizations</p>
+      </div>
       <div
         className={`flex flex-wrap gap-2 w-full lg:justify-center bg-primary-light py-4 rounded-lg text-primary`}
       >
@@ -289,8 +293,8 @@ const Tabs = () => {
           <Button
             className={
               index === tabState
-                ? " text-white bg-primary font-semibold"
-                : " bg-transparent font-semibold hover:text-black hover:bg-transparent"
+                ? " text-white bg-primary font-semibold border-none cursor-auto"
+                : " bg-transparent font-semibold hover:text-black hover:bg-primary-light border-none"
             }
             key={index}
             onClick={() => handleClick(index)}
