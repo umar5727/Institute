@@ -2,7 +2,13 @@ import React from "react";
 
 import TwoColumnHero from "../components/ToColumnHero";
 import SmallCard from "../components/SmallCard";
-import { Add, FeedbackContainer, SmallCardContainer, Tabs } from "../components";
+import {
+  Add,
+  Carousel,
+  FeedbackContainer,
+  SmallCardContainer,
+  Tabs,
+} from "../components";
 const Home = () => {
   const products = [
     {
@@ -83,8 +89,23 @@ const Home = () => {
     </div> */}
 
       <SmallCardContainer />
+
       <Tabs />
+      {/* advirtisment  */}
       <Add />
+
+      {/* trending courses        */}
+      
+
+      <section >
+        <div className="text-center mb-4">
+          <h1 className="text-3xl font-bold">Our Trending Courses</h1>
+          <p className="text-primary-text-normal dark:text-primary-text-normal-dark">Check out most 🔥 courses in the market</p>
+        </div>
+        <Carousel />
+      </section>
+
+      {/* feedback  */}
       <FeedbackContainer />
     </main>
   );

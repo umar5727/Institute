@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
         {/* category ends  */}
 
         <div className=" ">
-          <div className="font-bold text-xl transition-colors duration-300  cursor-pointer hover:text-primary ">{product.name}</div>
+          <h3 className="font-bold text-xl transition-colors duration-300  cursor-pointer hover:text-primary ">{product.name}</h3>
           <p className="text-primary-text-normal text-sm dark:text-primary-text-normal-dark">{product.description}</p>
         </div>
         {/* title ends  */}

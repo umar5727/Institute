@@ -13,6 +13,10 @@ import Add from "./Add";
 import FeedbackCard from "./feedback/FeedbackCard";
 import FeedbackContainer from "./feedback/FeedbackContainer";
 import Carousel from "./carousel/Crousel";
+import SmallCard from "./SmallCard";
+import RatingCard from "./feedback/RatingCard";
+import H2 from "./heading/H2";
+import H3 from "./heading/H3";
 export {
     Header,
     Profile,
@@ -28,4 +32,8 @@ export {
     FeedbackCard,
     FeedbackContainer,
     Carousel,
+    SmallCard,
+    RatingCard,
+    H2,
+    H3,
 }

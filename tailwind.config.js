@@ -45,7 +45,20 @@ export default {
         },
         transitionProperty: {
           'height': 'height',
-        }
+        },
+        flex:{
+          '0':'0 0 auto',
+        },
+        spacing: {
+          '128': '32rem',
+          '144': '36rem',
+        },
+        borderRadius: {
+          '4xl': '2rem',
+        },
+        boxShadow: {
+          'custom': '0 0 20px 0px rgba(29,58,83,0.15)',
+        },
     },
   },
   plugins: [],

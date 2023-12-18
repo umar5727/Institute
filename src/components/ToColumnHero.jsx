@@ -46,7 +46,7 @@ const TwoColumnHero = () => {
       </div>
 
       {/* Right Column - Full Image */}
-      <div className="lg:w-2/5 flex justify-center relative">
+      <div className="lg:w-2/5 flex justify-center relative overflow-hidden">
         <div className="relative  ">
           <figure className=" absolute -left-28 -bottom-12 figure z-0">
             <img
