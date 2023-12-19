@@ -58,6 +58,7 @@ export default {
         },
         boxShadow: {
           'custom': '0 0 20px 0px rgba(29,58,83,0.15)',
+          'more':'0 2 20px rgba(29,58,83,0.25)',
         },
     },
   },

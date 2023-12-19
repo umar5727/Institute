@@ -9,6 +9,7 @@ import {
   SmallCardContainer,
   Tabs,
 } from "../components";
+
 const Home = () => {
   const products = [
     {
@@ -107,6 +108,7 @@ const Home = () => {
 
       {/* feedback  */}
       <FeedbackContainer />
+      
     </main>
   );
 };

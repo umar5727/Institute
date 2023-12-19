@@ -17,6 +17,7 @@ import SmallCard from "./SmallCard";
 import RatingCard from "./feedback/RatingCard";
 import H2 from "./heading/H2";
 import H3 from "./heading/H3";
+import Li from "./Li";
 export {
     Header,
     Profile,
@@ -36,4 +37,5 @@ export {
     RatingCard,
     H2,
     H3,
+    Li,
 }

@@ -1,8 +1,8 @@
 
-import { faProductHunt } from "@fortawesome/free-brands-svg-icons";
+
 import { faHeart as regular, faClock, } from "@fortawesome/free-regular-svg-icons";
 
-import {  faCalendar, faFaceSmile, faHeart, faStar } from "@fortawesome/free-solid-svg-icons";
+import {  faCalendar, faFaceSmile, faHeart, faIndianRupee, faRupee, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
@@ -89,7 +89,7 @@ if(difficulty){
             <span className="ps-1">{lectures} lectures</span>
           </div>
         </div>
-      {/* ${product.price} */}
+          {/* time and lectures ends  */}
 
       {price? <hr/> :null}
       
@@ -98,11 +98,11 @@ if(difficulty){
             <FontAwesomeIcon icon={faFaceSmile} className="text-primary-green"/>
             <span>{mentors}</span>
           </div>
-          {/* time and lectures ends  */}
-          <div>
-            <FontAwesomeIcon icon={faProductHunt} className="text-primary-orange"/>
-            <span className="ps-1">{lectures} lectures</span>
+          <div className="text-primary-green font-bold text-xl">
+            <FontAwesomeIcon icon={faIndianRupee} className="text-primary-green"/>
+            <span className="ps-1 text-2xl">{price}</span>
           </div>
+      {/* ${product.price ends} */}
         </div>
         {/* footer ends  */}
       </div>

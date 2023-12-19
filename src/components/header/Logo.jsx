@@ -4,7 +4,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <section className="cursor-pointer flex gap-2 items-center">
+    <a href="#" className="cursor-pointer flex gap-2 items-center">
       <FontAwesomeIcon icon={faBook} className="text-primary text-3xl" 
       />
       
@@ -12,7 +12,7 @@ const Logo = () => {
       >
         MyClass
       </h1>
-    </section>
+    </a>
   );
 };
 

@@ -2,18 +2,21 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 
-import H3 from "../heading/H3";
+
 import Product from "../cards/Product";
+
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSlider, setAutoSlider] = useState(true);
-  const [duration, setDuration] = useState("duration-500");
+  const [duration, setDuration] = useState(500);
+  const [width,setwidth]=useState(100)
   const items = [
     {
       name: "JavaScript: Full first",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-      
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -25,8 +28,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full second",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -38,8 +42,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full third",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -51,8 +56,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full fourth",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -64,8 +70,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full fifth",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -77,8 +84,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full sixth",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -90,8 +98,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full first",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-      
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -103,8 +112,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full second",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -116,8 +126,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full third",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -129,8 +140,9 @@ const Carousel = () => {
     },
     {
       name: "JavaScript: Full fourth",
-      image: "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-     
+      image:
+        "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
+
       // price: 19.99,
 
       difficulty: "Beginner",
@@ -183,14 +195,14 @@ const Carousel = () => {
     // },
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % 6);
-    console.log(currentIndex);
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % 6);
+  //   console.log(currentIndex);
+  // };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + 7) % 7);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + 7) % 7);
+  // };
 
   const stopAutoSlider = () => {
     setAutoSlider(false);
@@ -201,21 +213,30 @@ const Carousel = () => {
 
   useEffect(() => {
     let slider;
-    let delay = 1000;
-    if (currentIndex === 6 || currentIndex === 0) {
-      // console.log(currentIndex)
-      // setAutoSlider(false)
-      setDuration("duration-0");
-      delay = 0;
-      // setAutoSlider(true)
-    } else {
-      setDuration("duration-500");
-      delay = 1000;
+    let delay = 2000;
+    var x = window.matchMedia("(min-width: 768px)")
+    var lg = window.matchMedia('(min-width: 1024px')
+    if(lg.matches){
+      setwidth(33.33);
+    }else if(x.matches){
+      setwidth(50);
+    }else{
+      setwidth(100)
     }
+    if (currentIndex === 7) {
+      setCurrentIndex(0);
+      setDuration(0);
+      delay = 0;
+  
+    } else {
+      setDuration(500);
+      delay = 3000;
+      
+    }
+    
     if (autoSlider) {
       slider = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % 7);
-        console.log(currentIndex)
+        setCurrentIndex(currentIndex + 1);
       }, delay);
     }
 
@@ -231,12 +252,23 @@ const Carousel = () => {
     >
       <div className="overflow-hidden rounded-lg">
         <div
-          className={`flex transition-transform ${duration} ease-in-out transform`}
-          style={{ transform: `translateX(${-currentIndex * 33.33}%) ` }}
+          className={`flex transition-transform  ease-in-out transform duration-${duration}`}
+          style={{ transform: `translateX(${-currentIndex * width}%) `}}
+     
         >
           {items.map((item, index) => (
-            <div key={index} className="w-2/6 px-3 flex-shrink-0 ">
-              <Product name={item.name} category={item.category} difficulty={item.difficulty} image={item.image} lectures={item.lectures} mentors={item.mentors} price={item.price} time={item.time}  />
+            <div key={index} className="shadow-more w-full md:w-3/6 lg:w-2/6 px-3 flex-shrink-0 ">
+              <Product
+                name={item.name}
+                category={item.category}
+                difficulty={item.difficulty}
+                image={item.image}
+                lectures={item.lectures}
+                mentors={item.mentors}
+                price={item.price}
+                time={item.time}
+              />
+              
             </div>
           ))}
         </div>

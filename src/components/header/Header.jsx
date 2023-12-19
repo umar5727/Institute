@@ -16,7 +16,7 @@ const [navbtn, setNavbtn]=useState(false)
   },[])
 
   return (
-    <header  className='w-full relative'>
+    <header id='myClass' className='w-full relative'>
       <Container>
         <div className='flex justify-between items-center bg-white h-16 dark:bg-primary-dark transition-colors duration-200'>
       <Logo />
